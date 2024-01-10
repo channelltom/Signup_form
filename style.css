@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Hedvig+Letters+Sans&family=Nunito:wght@200&family=Roboto:ital,wght@0,100;0,400;1,900&display=swap");
+body {
+  --background-color: hsl(230, 20%, 25%);
+  --text-color: dodgerblue;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  margin: 0;
+  font-family: "Hedvig Letters Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  background-color: dodgerblue;
+  width: 60%;
+  height: 100%;
+  justify-content: space-between;
+  background-position: center;
+  background-image: url(./assets/mobile_signup.svg);
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+.logo-text {
+  padding: 20px 60px;
+  font-size: 2.5em;
+  color: white;
+}
+
+.logo-text-span {
+  color: var(--background-color);
+}
+
+.img-card-text {
+  color: white;
+  padding: 30px 40px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  background-color: var(--background-color);
+}
+
+.form-title-text {
+  color: white;
+  padding: 0 70px;
+}
+
+.form-body {
+  display: flex;
+  height: 400px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+form {
+  width: 90%;
+}
+
+ul {
+  --x: 20px;
+  --y: 20px;
+  display: flex;
+  width: 100%;
+  height: 300px;
+  flex-direction: column;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+input {
+  color: hsl(0, 15%, 95%);
+  background: var(--background-color);
+  font-size: 20px;
+  border: 1px solid black;
+  padding: var(--y) var(--x);
+  height: 20px;
+  width: 60%;
+  border-radius: 4px;
+  box-shadow: 0 4px 2px -2px black;
+}
+
+label {
+  position: absolute;
+  background-color: var(--background-color);
+  left: var(--x);
+  top: calc(var(--y) - 1px);
+  border: 1px solid transparent;
+  padding: 0 3px;
+  margin: 0;
+  font-size: 14px;
+  color: darkgrey;
+  border-radius: 3px;
+  transition:
+    top 300ms,
+    color 300ms,
+    border-color 300ms,
+    font-size 300ms;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid dodgerblue;
+  transition: border 300ms;
+}
+
+input:is(:focus, :not(:placeholder-shown)) ~ label {
+  top: calc(var(--y) * -0.75);
+  font-size: 14px;
+  color: white;
+  background-color: dodgerblue;
+  border: 1px solid dodgerblue;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+button {
+  background-color: dodgerblue;
+  color: white;
+  width: 200px;
+  height: 40px;
+  margin-left: 100px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: hsl(210, 100%, 46%);
+}

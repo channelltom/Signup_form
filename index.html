@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign Up Page</title>
+  </head>
+  <body>
+    <div class="img-container">
+      <h1 class="logo-text">note<span class="logo-text-span">Mate</span></h1>
+      <h3 class="img-card-text">
+        Create an account and start taking notes today!
+      </h3>
+    </div>
+    <div class="form-container">
+      <h1 class="form-title-text">Sign Up Today!</h1>
+      <div class="form-body">
+        <form action="/my-signup-page" method="post">
+          <ul>
+            <li>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder=""
+              />
+              <label for="first-name">FIRST NAME</label>
+            </li>
+            <li>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder=""
+              />
+              <label for="last-name">LAST NAME</label>
+            </li>
+            <li>
+              <input type="email" id="email" name="email" placeholder="" />
+              <label for="email">EMAIL</label>
+            </li>
+            <li>
+              <input
+                type="number"
+                id="phone-num"
+                name="phone-num"
+                placeholder=""
+              />
+              <label for="phone-num">PHONE</label>
+            </li>
+            <li>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder=""
+              />
+              <label for="password">PASSWORD</label>
+            </li>
+            <li>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                placeholder=""
+              />
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+            </li>
+          </ul>
+        </form>
+      </div>
+      <button>Sign Up</button>
+    </div>
+  </body>
+</html>
