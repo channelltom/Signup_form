@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Sign Up Page</title>
   </head>
   <body>
@@ -51,25 +52,27 @@
             <li>
               <input
                 type="password"
-                id="password"
+                id="pass"
                 name="password"
                 placeholder=""
+                class="pw-field"
               />
               <label for="password">PASSWORD</label>
             </li>
             <li>
               <input
                 type="password"
-                id="confirm-password"
+                id="confirm-pass"
                 name="confirm-password"
                 placeholder=""
+                class="pw-field"
               />
               <label for="confirm-password">CONFIRM PASSWORD</label>
             </li>
           </ul>
         </form>
       </div>
-      <button>Sign Up</button>
+      <button id="signup-btn">Sign Up</button>
     </div>
   </body>
 </html>
